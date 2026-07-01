@@ -1,0 +1,762 @@
+/* =========================
+   DogMarket Style.css Part1
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    background:#f7f7f7;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===== Header ===== */
+
+header{
+
+    position:sticky;
+    top:0;
+
+    width:100%;
+
+    background:#ffffff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.logo a{
+
+    text-decoration:none;
+
+    color:#ff7b00;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ff7b00;
+
+}
+
+/* ===== Hero ===== */
+
+.hero{
+
+    width:100%;
+
+    min-height:520px;
+
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../images/banner.jpg") center/cover;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.hero-text{
+
+    width:90%;
+
+    max-width:800px;
+
+}
+
+.hero h1{
+
+    font-size:56px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h2{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+.hero-btn{
+
+    display:inline-block;
+
+    background:#ff7b00;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:16px 45px;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    background:#ff9800;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===== Search ===== */
+
+.search{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.search h2{
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+.search-box{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.search-box input,
+.search-box select{
+
+    width:220px;
+
+    padding:14px;
+
+    font-size:16px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+}
+
+.search-box button{
+
+    padding:14px 30px;
+
+    background:#ff7b00;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.search-box button:hover{
+
+    background:#ff9800;
+
+}
+
+/* =========================
+   DogMarket Style.css Part2
+========================= */
+
+/* ===== おすすめの子犬 ===== */
+
+.recommend{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:60px auto;
+
+}
+
+.recommend h2{
+
+    text-align:center;
+
+    font-size:36px;
+
+    margin-bottom:40px;
+
+}
+
+.dogs{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.card-body{
+
+    padding:20px;
+
+}
+
+.card-body h3{
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+.card-body p{
+
+    margin-bottom:10px;
+
+    font-size:16px;
+
+}
+
+.card-body h4{
+
+    color:#ff7b00;
+
+    font-size:28px;
+
+    margin:20px 0;
+
+}
+
+/* ===== 詳細ボタン ===== */
+
+.detailBtn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ff7b00;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.detailBtn:hover{
+
+    background:#ff9800;
+
+}
+
+/* ===== 販売状況 ===== */
+
+.status{
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    color:#fff;
+
+    font-weight:bold;
+
+    padding:8px 16px;
+
+    border-radius:25px;
+
+    font-size:14px;
+
+}
+
+.sale{
+
+    background:#28a745;
+
+}
+
+.meeting{
+
+    background:#ff9800;
+
+}
+
+.sold{
+
+    background:#757575;
+
+}
+
+/* ===== お問い合わせ ===== */
+
+.contact-home{
+
+    margin:80px auto;
+
+    width:90%;
+
+    max-width:1100px;
+
+}
+
+.contact-box{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.contact-box h2{
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+.contact-box p{
+
+    margin-bottom:30px;
+
+    font-size:18px;
+
+}
+
+.contact-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.contact-buttons a{
+
+    text-decoration:none;
+
+    color:#fff;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.lineBtn{
+
+    background:#06c755;
+
+}
+
+.mailBtn{
+
+    background:#2196f3;
+
+}
+
+.telBtn{
+
+    background:#ff5722;
+
+}
+
+.contact-buttons a:hover{
+
+    opacity:0.9;
+
+    transform:translateY(-3px);
+
+}
+
+/* =========================
+   DogMarket Style.css Part3
+========================= */
+
+/* ===== Footer ===== */
+
+footer{
+
+    background:#222;
+
+    color:#fff;
+
+    margin-top:80px;
+
+    padding:50px 20px;
+
+}
+
+.footer-content{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footer-content h3{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-content p{
+
+    margin:10px 0;
+
+    color:#ddd;
+
+    font-size:15px;
+
+}
+
+/* ===== ボタン共通 ===== */
+
+button{
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ===== 入力欄 ===== */
+
+input,
+select{
+
+    outline:none;
+
+}
+
+input:focus,
+select:focus{
+
+    border-color:#ff7b00;
+
+    box-shadow:0 0 8px rgba(255,123,0,.2);
+
+}
+
+/* ===== スマホ対応 ===== */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero{
+
+    min-height:420px;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero h2{
+
+    font-size:24px;
+
+}
+
+.hero p{
+
+    font-size:17px;
+
+}
+
+.search-box{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.search-box input,
+.search-box select,
+.search-box button{
+
+    width:100%;
+
+    max-width:450px;
+
+}
+
+.contact-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.contact-buttons a{
+
+    width:100%;
+
+    max-width:350px;
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.logo a{
+
+    font-size:24px;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero h2{
+
+    font-size:20px;
+
+}
+
+.recommend h2{
+
+    font-size:28px;
+
+}
+
+.card img{
+
+    height:220px;
+
+}
+
+.card-body h3{
+
+    font-size:22px;
+
+}
+
+.card-body h4{
+
+    font-size:24px;
+
+}
+
+.contact-box{
+
+    padding:25px;
+
+}
+
+.contact-box h2{
+
+    font-size:28px;
+
+}
+
+}
+
+/* ===== アニメーション ===== */
+
+.card,
+.hero-btn,
+.detailBtn,
+.contact-buttons a{
+
+    transition:all .3s ease;
+
+}
+
+/* ===== ページ全体の余白 ===== */
+
+main{
+
+    min-height:60vh;
+
+}
